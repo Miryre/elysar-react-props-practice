@@ -1,28 +1,22 @@
-import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Card from "./Card";
 
 //create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-            
+  // mock data
+  const person = {
+    name: "Liz",
+    age: "23",
+    carMake: "Hundai",
+    carModel: "Tacoma",
+    carYear: 2029,
+    image: "https://picsum.photos/200",
+  };
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+  return (
+    <div className="text-center">
+      <Card />
+    </div>
+  );
 };
 
 export default Home;
