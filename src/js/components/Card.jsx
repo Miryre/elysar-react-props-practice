@@ -1,4 +1,6 @@
-const Card = ({name, carMake, image}) => {
+import Button1 from "./Button1";
+
+const Card = ({name, carMake, image, carYear, carModel}) => {
   return (
     <>
       <div className="card" style={{ width: "18rem" }}>
@@ -9,8 +11,9 @@ const Card = ({name, carMake, image}) => {
             {carMake}
           </p>
           <a href="#" className="btn btn-primary">
-            Go somewhere
+            {carYear}
           </a>
+          <Button1 carModel={carModel} />
         </div>
       </div>
     </>

@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div className="text-center">
-      <Card name={person.name} carMake={person.carMake} image={person.image} />
+      <Card name={person.name} carMake={person.carMake} image={person.image} carYear={person.carYear} carModel={person.carModel}/>
     </div>
   );
 };
