@@ -6,15 +6,15 @@ const Home = () => {
   const person = {
     name: "Liz",
     age: "23",
-    carMake: "Hundai",
-    carModel: "Tacoma",
+    carMake: "Toyota",
+    carModel: "Prius",
     carYear: 2029,
     image: "https://picsum.photos/200",
   };
 
   return (
     <div className="text-center">
-      <Card />
+      <Card name={person.name} carMake={person.carMake} image={person.image} />
     </div>
   );
 };
